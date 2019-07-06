@@ -13,13 +13,9 @@
 }
 
 .dialog {
-
+    color: white;
 }
 
-.messages {
-
-}
-
-.message {
-
+.messages .message {
+    color: white;
 }

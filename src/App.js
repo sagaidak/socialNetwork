@@ -9,28 +9,7 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 
-const App = () => {
-
-    let postsData = [
-        {id: 1, post: "Hi, how are you?", likes: 5},
-        {id: 2, post: "Lost in the oblivion", likes: 10},
-    ];
-
-    let dialogsData = [
-        {id: 1, name: 'Alex'},
-        {id: 2, name: 'Masha'},
-        {id: 3, name: 'Lena'},
-        {id: 4, name: 'Katya'},
-        {id: 5, name: 'Ksusha'},
-        {id: 6, name: 'Albina'},
-    ];
-
-    let messagesData = [
-        {id: 1, message: 'Hi'},
-        {id: 1, message: 'I love you'},
-        {id: 1, message: 'I need you'},
-        {id: 1, message: 'I want you'},
-    ];
+const App = (props) => {
 
     return (
         <BrowserRouter>
@@ -38,8 +17,8 @@ const App = () => {
                 <Header/>
                 <Navbar/>
                 <div className="app-wrapper-content">
-                    <Route path='/dialogs' render={() => <Dialogs dialogsData={dialogsData} messagesData={messagesData} />}/>
-                    <Route path='/profile' render={() => <Profile postsData={postsData} />}/>
+                    <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage}  />}/>
+                    <Route path='/profile' render={() => <Profile state={props.state.profilePage} />}/>
                     <Route path='/news' component={News}/>
                     <Route path='/music' component={Music}/>
                     <Route path='/settings' component={Settings}/>

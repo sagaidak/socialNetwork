@@ -8,16 +8,23 @@ const MyPosts = (props) => {
 
     let addPost = () => {
         let text = newPostElement.current.value;
-        console.log(text);
-    }
+        props.addPost();
+    };
 
     let postsElements = props.postsData.map( post => <Post message={post.post} likes={post.likes}/>)
+
+    let onPostChange = () => {
+        let text = newPostElement.current.value;
+        props.updateNewPostText(text);
+    };
 
     return (
         <div className={s.postsBlock}>
             <h3>My Posts</h3>
             <div>
-                <textarea ref={newPostElement} cols="30" rows="1"></textarea>
+                <textarea onChange={onPostChange}
+                          ref={newPostElement} cols="30" rows="1"
+                          value={props.newPostText} />
             </div>
             <div>
                 <button onClick={ addPost }>Добавить</button>
@@ -29,6 +36,6 @@ const MyPosts = (props) => {
         </div>
     );
 
-}
+};
 
 export default MyPosts;

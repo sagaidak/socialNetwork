@@ -1,3 +1,8 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY';
+const SEND_MESSAGE = 'SEND-MESSAGE';
+
 let store = {
     _state: {
         profilePage: {
@@ -22,7 +27,8 @@ let store = {
                 {id: 1, message: 'I love you'},
                 {id: 1, message: 'I need you'},
                 {id: 1, message: 'I want you'},
-            ]
+            ],
+            newMessageBody: '',
         },
     },
     _callSubscriber() {
@@ -50,15 +56,55 @@ let store = {
         this._state.profilePage.newPostText = newText;
         this._callSubscriber(this._state);
     },
+    _updateNewMessageBody(text) {
+
+        this._state.dialogsPage.newMessageBody = text;
+        this._callSubscriber(this._state);
+    },
+    _sendNewMessage() {
+
+        let newMessage = {
+            id: 0,
+            message: this._state.dialogsPage.newMessageBody
+        };
+        this._state.dialogsPage.messagesData.push(newMessage);
+        this._state.dialogsPage.newMessageBody = '';
+
+        this._callSubscriber(this._state);
+    },
 
     dispatch(action) { // { type: 'ADD-POST', ...: ... }
-        if (action.type === 'ADD-POST') {
+        if (action.type === ADD_POST) {
             this._addPost();
-        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+        } else if (action.type === UPDATE_NEW_POST_TEXT) {
             this._updateNewPostText(action.newText);
+        } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
+            this._updateNewMessageBody(action.newText);
+        } else if (action.type === SEND_MESSAGE) {
+            this._sendNewMessage();
         }
     },
 };
+
+
+export const addPostActionCreator = () => ({
+    type: ADD_POST
+});
+
+
+export const updateNewPostTextActionCreator = (text) => ({
+    type: UPDATE_NEW_POST_TEXT,
+    newText: text
+});
+
+export const updateNewMessageBodyCreator = (text) => ({
+    type: UPDATE_NEW_MESSAGE_BODY,
+    newText: text
+});
+
+export const sendNewMessageCreator = () => ({
+    type: SEND_MESSAGE
+});
 
 
 

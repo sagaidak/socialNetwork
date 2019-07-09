@@ -15,9 +15,9 @@ const Dialogs = (props) => {
         props.sendMessage();
     };
 
-    let dialogsElements = props.dialogsData.map( dialog => <DialogItem name={dialog.name} id={dialog.id} avatarURL={dialog.avatarURL} /> );
+    let dialogsElements = props.dialogsPage.dialogsData.map( dialog => <DialogItem name={dialog.name} id={dialog.id} avatarURL={dialog.avatarURL} /> );
 
-    let messagesElements = props.messagesData.map( message => <Message message={message.message} />);
+    let messagesElements = props.dialogsPage.messagesData.map( message => <Message message={message.message} />);
 
     return (
         <div className={s.dialogs}>
@@ -30,7 +30,7 @@ const Dialogs = (props) => {
                 <div>
                     <textarea cols="30" rows="1"
                               onChange={updateMessage}
-                              value={props.newMessageBody}
+                              value={props.dialogsPage.newMessageBody}
                     />
                 </div>
                 <div>

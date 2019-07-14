@@ -15,9 +15,9 @@ const Dialogs = (props) => {
         props.sendMessage();
     };
 
-    let dialogsElements = props.dialogsPage.dialogsData.map( dialog => <DialogItem name={dialog.name} id={dialog.id} avatarURL={dialog.avatarURL} /> );
+    let dialogsElements = props.dialogsPage.dialogsData.map( dialog => <DialogItem name={dialog.name} key={dialog.id} id={dialog.id} avatarURL={dialog.avatarURL} /> );
 
-    let messagesElements = props.dialogsPage.messagesData.map( message => <Message message={message.message} />);
+    let messagesElements = props.dialogsPage.messagesData.map( message => <Message message={message.message} key={message.id} />);
 
     return (
         <div className={s.dialogs}>

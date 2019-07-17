@@ -1,80 +1,80 @@
 import React from 'react';
 import s from './Users.module.css';
+import * as axios from 'axios';
+let baseURL = 'https://social-network.samuraijs.com/api/1.0';
 
-const Users = (props) => {
 
-    if (props.users.length === 0) {
-        props.setUsers([
-                {
-                    id: 1,
-                    photoUrl: 'https://www.nastol.com.ua/pic/201605/1600x900/nastol.com.ua-173592.jpg',
-                    followed: false,
-                    fullName: "Alex",
-                    status: "savage",
-                    location: {city: 'Odessa', country: 'Ukraine'}
-                },
-                {
-                    id: 2,
-                    photoUrl: 'https://avatars.mds.yandex.net/get-pdb/38069/6d8b43bf-a539-493d-a4f4-ef9f8be3bd58/s1200?webp=false',
-                    followed: false,
-                    fullName: "Olga",
-                    status: "suicide",
-                    location: {city: 'Odessa', country: 'Ukraine'}
-                },
-                {
-                    id: 3,
-                    photoUrl: 'http://m.vodafone.smsclick.com.ua/public/test/video/record/image/1526568181_oleksandr-kvarta-boze-ak-garno.jpg',
-                    followed: true,
-                    fullName: "Lilia",
-                    status: "rave",
-                    location: {city: 'Kiev', country: 'Ukraine'}
-                },
-                {
-                    id: 4,
-                    photoUrl: 'http://static.hdw.eweb4.com/media/wallpapers_dl/1/132/1319993-asian-girl-with-glasses-on-a-bench.jpg',
-                    followed: true,
-                    fullName: "Max",
-                    status: "just me",
-                    location: {city: 'Odessa', country: 'Ukraine'}
-                },
-            ]
-        );
+class Users extends React.Component {
+
+    componentDidMount() {
+        axios
+            .get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
+            .then( response => {
+                this.props.setUsers(response.data.items);
+                this.props.setTotalUsersCount(response.data.totalCount);
+            });
     }
 
-    return (
-        <div>
-            {
-                props.users.map(u => <div key={u.id}>
+    onPageChanged = (p) => {
+        this.props.setCurrentPage(p);
+        axios
+            .get(`https://social-network.samuraijs.com/api/1.0/users?page=${p}&count=${this.props.pageSize}`)
+            .then( response => {this.props.setUsers(response.data.items)});
+    };
+
+    render() {
+
+        let pagesCount = Math.ceil(this.props.totalUsersCount / this.props.pageSize);
+
+        let pages = [];
+
+        for (let i=1; i <= pagesCount; i++) {
+            pages.push(i);
+        }
+
+        return (
+            <div>
+                <div>
+                    {pages.map(p => {
+                        return <span className={ this.props.currentPage === p && s.selectedPage }
+                                    onClick={() => {this.onPageChanged(p)}}
+                        >{p}</span>
+                    })}
+
+                </div>
+                {
+                    this.props.users.map(u => <div key={u.id}>
                   <span>
                       <div>
-                          <img src={u.photoUrl} alt="" className={s.userPhoto}/>
+                          <img src={u.photos.small != null ? u.photos.small : "https://im0-tub-ua.yandex.net/i?id=dd2cf00050c2bdee7367b812138f0038&n=33&w=240&h=150"} alt="" className={s.userPhoto}/>
                       </div>
                       <div>
                           {u.followed
                               ? <button onClick={() => {
-                                  props.unfollow(u.id)
+                                  this.props.unfollow(u.id)
                               }}>Unfollow</button>
                               : <button onClick={() => {
-                                  props.follow(u.id)
+                                  this.props.follow(u.id)
                               }}>Follow</button>
                           }
 
                       </div>
                   </span>
-                    <span>
+                        <span>
                       <span>
-                          <div>{u.fullName}</div>
+                          <div>{u.name}</div>
                           <div>{u.status}</div>
                       </span>
                       <span>
-                          <div>{u.location.country}</div>
-                          <div>{u.location.city}</div>
+                          <div>{"u.location.country"}</div>
+                          <div>{"u.location.city"}</div>
                       </span>
                   </span>
-                </div>)
-            }
-        </div>
-    )
-};
+                    </div>)
+                }
+            </div>
+        )
+    }
+}
 
 export default Users;

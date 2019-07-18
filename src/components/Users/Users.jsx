@@ -1,66 +1,72 @@
 import React from 'react';
 import s from './Users.module.css';
+import {NavLink} from "react-router-dom";
 import * as axios from 'axios';
-let baseURL = 'https://social-network.samuraijs.com/api/1.0';
 
 
-class Users extends React.Component {
+const Users = (props) => {
 
-    componentDidMount() {
-        axios
-            .get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
-            .then( response => {
-                this.props.setUsers(response.data.items);
-                this.props.setTotalUsersCount(response.data.totalCount);
-            });
+    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+
+    let pages = [];
+
+    for (let i = 1; i <= pagesCount; i++) {
+        pages.push(i);
     }
 
-    onPageChanged = (p) => {
-        this.props.setCurrentPage(p);
-        axios
-            .get(`https://social-network.samuraijs.com/api/1.0/users?page=${p}&count=${this.props.pageSize}`)
-            .then( response => {this.props.setUsers(response.data.items)});
-    };
-
-    render() {
-
-        let pagesCount = Math.ceil(this.props.totalUsersCount / this.props.pageSize);
-
-        let pages = [];
-
-        for (let i=1; i <= pagesCount; i++) {
-            pages.push(i);
-        }
-
-        return (
+    return (
+        <div>
             <div>
-                <div>
-                    {pages.map(p => {
-                        return <span className={ this.props.currentPage === p && s.selectedPage }
-                                    onClick={() => {this.onPageChanged(p)}}
-                        >{p}</span>
-                    })}
+                {pages.map(p => {
+                    return <span className={props.currentPage === p && s.selectedPage}
+                                 onClick={() => {
+                                     props.onPageChanged(p)
+                                 }}
+                    >{p}</span>
+                })}
 
-                </div>
-                {
-                    this.props.users.map(u => <div key={u.id}>
+            </div>
+            {
+                props.users.map(u => <div key={u.id}>
                   <span>
                       <div>
-                          <img src={u.photos.small != null ? u.photos.small : "https://im0-tub-ua.yandex.net/i?id=dd2cf00050c2bdee7367b812138f0038&n=33&w=240&h=150"} alt="" className={s.userPhoto}/>
+                          <NavLink to={'/profile/' + u.id}>
+                          <img
+                              src={u.photos.small != null ? u.photos.small : "https://im0-tub-ua.yandex.net/i?id=dd2cf00050c2bdee7367b812138f0038&n=33&w=240&h=150"}
+                              alt="" className={s.userPhoto}/>
+                          </NavLink>
                       </div>
                       <div>
                           {u.followed
                               ? <button onClick={() => {
-                                  this.props.unfollow(u.id)
+                                  axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {
+                                      withCredentials: true,
+                                      headers: {
+                                          "API-KEY": "e4c0e848-591a-40df-a660-b8855433ec28"
+                                      }
+                                  }).then(response => {
+                                      if (response.data.resultCode === 0) {
+                                          props.unfollow(u.id)
+                                      }
+                                  });
                               }}>Unfollow</button>
                               : <button onClick={() => {
-                                  this.props.follow(u.id)
+                                  axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {}, {
+                                      withCredentials: true,
+                                      headers: {
+                                          "API-KEY": "e4c0e848-591a-40df-a660-b8855433ec28"
+                                      }
+                                  }).then(response => {
+                                      if (response.data.resultCode === 0) {
+                                          props.follow(u.id)
+                                      }
+                                  });
                               }}>Follow</button>
                           }
 
                       </div>
                   </span>
-                        <span>
+                    <span>
                       <span>
                           <div>{u.name}</div>
                           <div>{u.status}</div>
@@ -70,11 +76,10 @@ class Users extends React.Component {
                           <div>{"u.location.city"}</div>
                       </span>
                   </span>
-                    </div>)
-                }
-            </div>
-        )
-    }
-}
+                </div>)
+            }
+        </div>
+    )
+};
 
 export default Users;

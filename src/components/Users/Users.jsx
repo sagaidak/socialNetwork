@@ -18,7 +18,7 @@ const Users = (props) => {
         <div>
             <div>
                 {pages.map(p => {
-                    return <span className={props.currentPage === p && s.selectedPage}
+                    return <span className={props.currentPage === p ? s.selectedPage : ''}
                                  onClick={() => {
                                      props.onPageChanged(p)
                                  }}
@@ -38,19 +38,24 @@ const Users = (props) => {
                       </div>
                       <div>
                           {u.followed
-                              ? <button onClick={() => {
+                              ? <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
+                                  props.toggleIsFollowingProgress(u.id, true);
+
                                   userAPI.unfollow(u.id).then(response => {
                                       if (response.resultCode === 0) {
                                           props.unfollow(u.id)
                                       }
+                                      props.toggleIsFollowingProgress(u.id, false);
                                   });
                               }}>Unfollow</button>
-                              : <button onClick={() => {
+                              : <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
+                                  props.toggleIsFollowingProgress(u.id, true);
                                   userAPI.follow(u.id)
                                       .then(response => {
                                           if (response.resultCode === 0) {
                                               props.follow(u.id)
                                           }
+                                          props.toggleIsFollowingProgress(u.id, false);
                                       });
                               }}>Follow</button>
                           }

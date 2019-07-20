@@ -25,18 +25,20 @@ export const userAPI = {
             .delete(`follow/${user_id}`)
             .then(response => response.data);
     },
-    authMe() {
-        return instance
-            .get('auth/me', {
-                withCredentials: true
-            })
-            .then(response => response.data);
-    },
+
     getUserProfile(userId) {
         return instance
-            .get(`https://social-network.samuraijs.com/api/1.0/profile/${userId}`)
+            .get(`profile/${userId}`)
             .then(response => response.data);
     }
+};
+
+export const authAPI = {
+    authMe() {
+        return instance
+            .get('auth/me')
+            .then(response => response.data);
+    },
 };
 
 

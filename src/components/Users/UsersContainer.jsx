@@ -1,37 +1,21 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {
-    follow,
-    setCurrentPage,
-    setTotalUsersCount,
-    setUsers, toggleIsFetching, toggleIsFollowingProgress,
-    unfollow
+    followThunk, getUsers,
+    unfollowThunk
 } from '../../redux/users-reducer';
 import Users from './Users';
 import Preloader from "../common/Preloader/Preloader";
-import {userAPI} from "../../api/api";
 
 
 class UsersContainer extends React.Component {
 
     componentDidMount() {
-        this.props.toggleIsFetching(true);
-        userAPI.getUsers(this.props.currentPage, this.props.pageSize)
-            .then(data => {
-                this.props.setUsers(data.items);
-                this.props.setTotalUsersCount(data.totalCount);
-                this.props.toggleIsFetching(false);
-            });
+        this.props.getUsers(this.props.currentPage, this.props.pageSize);
     }
 
     onPageChanged = (p) => {
-        this.props.toggleIsFetching(true);
-        this.props.setCurrentPage(p);
-        userAPI.getUsers(p, this.props.pageSize)
-            .then(data => {
-                this.props.setUsers(data.items);
-                this.props.toggleIsFetching(false);
-            });
+        this.props.getUsers(p, this.props.pageSize);
     };
 
     render() {
@@ -42,10 +26,9 @@ class UsersContainer extends React.Component {
                    currentPage={this.props.currentPage}
                    users={this.props.users}
                    onPageChanged={this.onPageChanged}
-                   unfollow={this.props.unfollow}
-                   follow={this.props.follow}
-                   toggleIsFollowingProgress={this.props.toggleIsFollowingProgress}
                    followingInProgress={this.props.followingInProgress}
+                   followThunk={this.props.followThunk}
+                   unfollowThunk={this.props.unfollowThunk}
             />
 
         </>
@@ -64,11 +47,7 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {
-    follow,
-    unfollow,
-    setUsers,
-    setCurrentPage,
-    setTotalUsersCount,
-    toggleIsFetching,
-    toggleIsFollowingProgress
+    getUsers,
+    followThunk,
+    unfollowThunk
 })(UsersContainer);

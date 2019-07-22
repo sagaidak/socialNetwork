@@ -32,5 +32,16 @@ export const authMe = () => (dispatch) => {
             }
         })
 };
+export const userLogin = (email, password, rememberMe) => (dispatch) => {
+    return authAPI.login(email, password, rememberMe)
+        .then(response => {
+            if (response.resultCode === 0) {
+                dispatch(authMe);
+            }
+            if (response.resultCode !== 0) {
+                console.log('captcha or invalid');
+            }
+        })
+};
 
 export default authReducer;

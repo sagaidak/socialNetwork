@@ -3,22 +3,39 @@ import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import {Redirect} from "react-router-dom";
+import {Field, reduxForm} from "redux-form";
 
+const DialogsForm = (props) => {
+    return <form onSubmit={props.handleSubmit}>
+        <div>
+            <Field cols="30" rows="1"
+                   name={'dialog'}
+                   component={'textarea'}
+                   placeholder={'New Message'}
+            />
+        </div>
+        <div>
+            <button>Написать</button>
+        </div>
+    </form>
+};
+
+const DialogsReduxForm = reduxForm({
+    form: 'dialog'
+})(DialogsForm);
 
 const Dialogs = (props) => {
 
-    let updateMessage = (e) => {
-        let text = e.target.value;
-        props.updateMessage(text);
+    let dialogsElements = props.dialogsPage.dialogsData.map(dialog => <DialogItem name={dialog.name} key={dialog.id}
+                                                                                  id={dialog.id}
+                                                                                  avatarURL={dialog.avatarURL}/>);
+
+    let messagesElements = props.dialogsPage.messagesData.map(message => <Message message={message.message}
+                                                                                  key={message.id}/>);
+    const onSubmit = (data) => {
+        props.sendMessage(data.dialog);
+        console.log(data);
     };
-
-    let sendMessage = () => {
-        props.sendMessage();
-    };
-
-    let dialogsElements = props.dialogsPage.dialogsData.map( dialog => <DialogItem name={dialog.name} key={dialog.id} id={dialog.id} avatarURL={dialog.avatarURL} /> );
-
-    let messagesElements = props.dialogsPage.messagesData.map( message => <Message message={message.message} key={message.id} />);
 
     return (
         <div className={s.dialogs}>
@@ -28,15 +45,7 @@ const Dialogs = (props) => {
             <div className={s.messages}>
 
                 {messagesElements}
-                <div>
-                    <textarea cols="30" rows="1"
-                              onChange={updateMessage}
-                              value={props.dialogsPage.newMessageBody}
-                    />
-                </div>
-                <div>
-                    <button onClick={sendMessage}>Написать</button>
-                </div>
+                <DialogsReduxForm onSubmit={onSubmit}/>
 
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
+import ProfileStatus from './ProfileStatus';
 
 const ProfileInfo = (props) => {
     if (!props.profile) {
@@ -16,9 +17,6 @@ const ProfileInfo = (props) => {
 
     return (
         <div >
-            <div>
-                <img src='https://i.redd.it/wkk4zz08qf731.jpg' />
-            </div>
             <div className={s.description_block}>
                 <div>Name: {props.profile.fullName}</div>
                 <div>Contacts: {dataContacts.map(c => (
@@ -29,6 +27,9 @@ const ProfileInfo = (props) => {
                 <div>lookingForAJobDescription: {props.profile.lookingForAJobDescription}</div>
 
                 <img src={props.profile.photos.small} />
+                <ProfileStatus status={props.status}
+                               updateUserStatus={props.updateUserStatus}
+                />
 
             </div>
         </div>

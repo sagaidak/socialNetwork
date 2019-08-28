@@ -29,11 +29,9 @@ const MyPostsReduxForm = reduxForm({
 const MyPosts = (props) => {
 
     let postsElements = props.profilePage.postsData.map( post => <Post message={post.post} key={post.id} likes={post.likes}/>);
-    console.log(postsElements);
 
     const onSubmit = (data) => {
         props.addPost(data.post);
-        console.log(data);
     };
 
     return (

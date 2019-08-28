@@ -1,4 +1,5 @@
 import {authAPI} from "../api/api";
+import {stopSubmit} from "redux-form";
 
 const SET_USER_DATA = 'SET_USER_DATA';
 
@@ -14,21 +15,20 @@ const authReducer = (state=initialState, action) => {
         case SET_USER_DATA:
             return {
                 ...state,
-                ...action.data,
-                isAuth: true
+                ...action.payload,
             };
         default:
             return state;
     }
 };
 
-export const setAuthUserData = (userId, email, login) => ({type: SET_USER_DATA, data: {userId, email, login}});
+export const setAuthUserData = (userId, email, login, isAuth) => ({type: SET_USER_DATA, payload: {userId, email, login, isAuth}});
 export const authMe = () => (dispatch) => {
     return authAPI.authMe()
         .then(response => {
             if (response.resultCode === 0) {
                 let {id, email, login} = response.data;
-                dispatch(setAuthUserData(id, email, login));
+                dispatch(setAuthUserData(id, email, login, true));
             }
         })
 };
@@ -39,8 +39,17 @@ export const userLogin = (email, password, rememberMe) => (dispatch) => {
                 dispatch(authMe);
             }
             if (response.resultCode !== 0) {
-                console.log('captcha or invalid');
+                dispatch(stopSubmit("login", {_error: (response.messages.length > 0 ? response.messages : 'Some Error')}));
             }
+        })
+};
+export const userLogout = () => (dispatch) => {
+    return authAPI.logout()
+        .then(response => {
+            if (response.resultCode === 0) {
+                dispatch(setAuthUserData(null, null, null, false))
+            }
+
         })
 };
 

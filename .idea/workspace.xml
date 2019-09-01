@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e670f4-e2bf-4f53-905a-f431687c9274" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,14 +44,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyPosts.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyPosts.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile-reducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/redux/profile-reducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile-reducer.test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/redux/profile-reducer.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -74,45 +91,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Login/Login.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeaderContainer.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app-reducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/app-reducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth-reducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/auth-reducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="25" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -142,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Profile/Profile.module.css" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/News/News.jsx" />
         <option value="$PROJECT_DIR$/src/components/Music/Music.jsx" />
@@ -171,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" />
         <option value="$PROJECT_DIR$/src/redux/dialogs-reducer.js" />
         <option value="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" />
-        <option value="$PROJECT_DIR$/src/redux/profile-reducer.js" />
         <option value="$PROJECT_DIR$/src/utils/validators/validators.js" />
         <option value="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" />
         <option value="$PROJECT_DIR$/src/api/api.js" />
@@ -193,6 +169,8 @@
         <option value="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" />
         <option value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" />
         <option value="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" />
+        <option value="$PROJECT_DIR$/src/redux/profile-reducer.js" />
+        <option value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
       </list>
     </option>
   </component>
@@ -213,10 +191,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="542" />
-    <option name="y" value="150" />
+    <option name="x" value="359" />
+    <option name="y" value="190" />
     <option name="width" value="888" />
-    <option name="height" value="559" />
+    <option name="height" value="656" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -342,6 +320,7 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\prapo\Desktop\React-learn\network" />
     <property name="node.js.selected.package.standard" value="C:\Users\prapo\Desktop\React-learn\network" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -368,6 +347,53 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Jest.length should be decremented after deleting">
+    <configuration name="length should be decremented after deleting" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="length should be decremented after deleting" />
+      </test-names>
+    </configuration>
+    <configuration name="message of new post should be correct" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="message of new post should be correct" />
+      </test-names>
+    </configuration>
+    <configuration name="new post should be added" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="new post should be added" />
+      </test-names>
+    </configuration>
+    <list>
+      <item itemvalue="Jest.new post should be added" />
+      <item itemvalue="Jest.message of new post should be correct" />
+      <item itemvalue="Jest.length should be decremented after deleting" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.length should be decremented after deleting" />
+        <item itemvalue="Jest.message of new post should be correct" />
+        <item itemvalue="Jest.new post should be added" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -400,12 +426,41 @@
       <workItem from="1567009969379" duration="7718000" />
       <workItem from="1567065236180" duration="1770000" />
       <workItem from="1567164283962" duration="5822000" />
-      <workItem from="1567334801459" duration="4416000" />
+      <workItem from="1567334801459" duration="6792000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 51m 25s.xml">
+      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 52m 21s.xml">
+      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 52m 45s.xml">
+      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 53m 10s.xml">
+      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 53m 28s.xml">
+      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="message_of_new_post_should_be_correct - 2019.09.01 at 15h 56m 32s.xml">
+      <configuration name="message of new post should be correct" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="message_of_new_post_should_be_correct - 2019.09.01 at 15h 57m 01s.xml">
+      <configuration name="message of new post should be correct" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="length_should_be_decremented_after_deleting - 2019.09.01 at 16h 04m 43s.xml">
+      <configuration name="length should be decremented after deleting" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="length_should_be_decremented_after_deleting - 2019.09.01 at 16h 05m 05s.xml">
+      <configuration name="length should be decremented after deleting" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148722000" />
+    <option name="totallyTimeSpent" value="151098000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,15 +472,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="542" y="150" width="888" height="559" extended-state="0" />
+    <frame x="359" y="190" width="888" height="656" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17294118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17294118" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3276699" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34169886" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -452,16 +507,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Settings/Settings.module.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Settings/Settings.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Navbar/Navbar.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -611,13 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -641,13 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/profile-reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -781,10 +812,41 @@
     <entry file="file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/profile-reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/profile-reducer.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>

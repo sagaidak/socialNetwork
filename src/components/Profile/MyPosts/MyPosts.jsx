@@ -28,7 +28,7 @@ const MyPostsReduxForm = reduxForm({
 
 const MyPosts = React.memo(props => {
     // memo still rerendering this shit
-    
+
     let postsElements = props.profilePage.postsData.map(post => <Post message={post.post} key={post.id}
                                                                       likes={post.likes}/>);
 

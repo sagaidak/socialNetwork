@@ -26,9 +26,11 @@ const MyPostsReduxForm = reduxForm({
     form: 'myPosts'
 })(MyPostsForm);
 
-const MyPosts = (props) => {
-
-    let postsElements = props.profilePage.postsData.map( post => <Post message={post.post} key={post.id} likes={post.likes}/>);
+const MyPosts = React.memo(props => {
+    // memo still rerendering this shit
+    
+    let postsElements = props.profilePage.postsData.map(post => <Post message={post.post} key={post.id}
+                                                                      likes={post.likes}/>);
 
     const onSubmit = (data) => {
         props.addPost(data.post);
@@ -38,7 +40,7 @@ const MyPosts = (props) => {
         <div className={s.postsBlock}>
             <h3>My Posts</h3>
 
-            <MyPostsReduxForm onSubmit={onSubmit}  />
+            <MyPostsReduxForm onSubmit={onSubmit}/>
 
             <div className={s.posts}>
                 {postsElements}
@@ -46,6 +48,6 @@ const MyPosts = (props) => {
         </div>
     );
 
-};
+});
 
 export default MyPosts;

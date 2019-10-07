@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b3e670f4-e2bf-4f53-905a-f431687c9274" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/object-helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/object-helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,20 +25,11 @@
       <file leaf-file-name="users-reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/users-reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
+            <state relative-caret-position="357">
               <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/api.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -50,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Users.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Users/Users.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="51">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -62,11 +55,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Paginator.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx">
+      <file leaf-file-name="redux-store.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/redux/redux-store.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileStatus.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileStatus.test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -74,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersContainer.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Users/UsersContainer.jsx">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            <state relative-caret-position="351">
+              <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -86,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Users/User.jsx">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -123,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Profile/ProfileInfo.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" />
         <option value="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" />
         <option value="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" />
         <option value="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" />
@@ -151,8 +172,6 @@
         <option value="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" />
         <option value="$PROJECT_DIR$/src/components/Login/Login.module.css" />
         <option value="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/redux/redux-store.js" />
         <option value="$PROJECT_DIR$/src/redux/app-reducer.js" />
         <option value="$PROJECT_DIR$/src/redux/users-selectors.js" />
         <option value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" />
@@ -162,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
         <option value="$PROJECT_DIR$/src/redux/auth-reducer.js" />
         <option value="$PROJECT_DIR$/src/redux/profile-reducer.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Login/Login.jsx" />
         <option value="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" />
         <option value="$PROJECT_DIR$/src/components/Users/Users.module.css" />
@@ -174,6 +192,11 @@
         <option value="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" />
         <option value="$PROJECT_DIR$/src/utils/object-helpers.js" />
         <option value="$PROJECT_DIR$/src/components/Users/Users.jsx" />
+        <option value="$PROJECT_DIR$/src/redux/redux-store.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/App.test.js" />
+        <option value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       </list>
     </option>
   </component>
@@ -194,10 +217,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="281" />
-    <option name="y" value="107" />
+    <option name="x" value="418" />
+    <option name="y" value="310" />
     <option name="width" value="1025" />
-    <option name="height" value="656" />
+    <option name="height" value="675" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -218,18 +241,7 @@
             <path>
               <item name="network" type="b2602c69:ProjectViewProjectNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="network" type="b2602c69:ProjectViewProjectNode" />
@@ -242,20 +254,15 @@
               <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="network" type="b2602c69:ProjectViewProjectNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+              <item name="ProfileInfo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,50 +309,81 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.length should be decremented after deleting">
-    <configuration name="length should be decremented after deleting" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.ProfileStatus Component.updateStatus Callback should be called">
+    <configuration name="ProfileStatus Component.After creation &lt;input&gt; shouldn't be displayed" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       <test-names>
-        <test-name value="length should be decremented after deleting" />
+        <test-name value="ProfileStatus Component" />
+        <test-name value="After creation &lt;input&gt; shouldn't be displayed" />
       </test-names>
     </configuration>
-    <configuration name="message of new post should be correct" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileStatus Component.After creation &lt;span&gt; should be displayed" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       <test-names>
-        <test-name value="message of new post should be correct" />
+        <test-name value="ProfileStatus Component" />
+        <test-name value="After creation &lt;span&gt; should be displayed" />
       </test-names>
     </configuration>
-    <configuration name="new post should be added" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileStatus Component.After creation &lt;span&gt; with correct status should be displayed" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
       <test-names>
-        <test-name value="new post should be added" />
+        <test-name value="ProfileStatus Component" />
+        <test-name value="After creation &lt;span&gt; with correct status should be displayed" />
+      </test-names>
+    </configuration>
+    <configuration name="ProfileStatus Component.Input should be displayed in edit mode instead of span" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
+      <test-names>
+        <test-name value="ProfileStatus Component" />
+        <test-name value="Input should be displayed in edit mode instead of span" />
+      </test-names>
+    </configuration>
+    <configuration name="ProfileStatus Component.updateStatus Callback should be called" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
+      <test-names>
+        <test-name value="ProfileStatus Component" />
+        <test-name value="updateStatus Callback should be called" />
       </test-names>
     </configuration>
     <list>
-      <item itemvalue="Jest.new post should be added" />
-      <item itemvalue="Jest.message of new post should be correct" />
-      <item itemvalue="Jest.length should be decremented after deleting" />
+      <item itemvalue="Jest.ProfileStatus Component.After creation &lt;span&gt; with correct status should be displayed" />
+      <item itemvalue="Jest.ProfileStatus Component.After creation &lt;span&gt; should be displayed" />
+      <item itemvalue="Jest.ProfileStatus Component.After creation &lt;input&gt; shouldn't be displayed" />
+      <item itemvalue="Jest.ProfileStatus Component.Input should be displayed in edit mode instead of span" />
+      <item itemvalue="Jest.ProfileStatus Component.updateStatus Callback should be called" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.length should be decremented after deleting" />
-        <item itemvalue="Jest.message of new post should be correct" />
-        <item itemvalue="Jest.new post should be added" />
+        <item itemvalue="Jest.ProfileStatus Component.updateStatus Callback should be called" />
+        <item itemvalue="Jest.ProfileStatus Component.Input should be displayed in edit mode instead of span" />
+        <item itemvalue="Jest.ProfileStatus Component.After creation &lt;span&gt; with correct status should be displayed" />
+        <item itemvalue="Jest.ProfileStatus Component.After creation &lt;input&gt; shouldn't be displayed" />
+        <item itemvalue="Jest.ProfileStatus Component.After creation &lt;span&gt; should be displayed" />
       </list>
     </recent_temporary>
   </component>
@@ -381,41 +419,45 @@
       <workItem from="1567065236180" duration="1770000" />
       <workItem from="1567164283962" duration="5822000" />
       <workItem from="1567334801459" duration="7544000" />
-      <workItem from="1570455311238" duration="11113000" />
+      <workItem from="1570455311238" duration="12361000" />
+      <workItem from="1570472165338" duration="4126000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 51m 25s.xml">
-      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_After_creation__span__with_correct_status_should_be_displayed - 2019.10.07 at 21h 52m 37s.xml">
+      <configuration name="ProfileStatus Component.After creation &lt;span&gt; with correct status should be displayed" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 52m 21s.xml">
-      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_After_creation__span__with_correct_status_should_be_displayed - 2019.10.07 at 21h 59m 48s.xml">
+      <configuration name="ProfileStatus Component.After creation &lt;span&gt; with correct status should be displayed" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 52m 45s.xml">
-      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_After_creation__span__should_be_displayed - 2019.10.07 at 22h 08m 19s.xml">
+      <configuration name="ProfileStatus Component.After creation &lt;span&gt; should be displayed" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 53m 10s.xml">
-      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_After_creation__input__shouldn't_be_displayed - 2019.10.07 at 22h 09m 14s.xml">
+      <configuration name="ProfileStatus Component.After creation &lt;input&gt; shouldn't be displayed" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="new_post_should_be_added - 2019.09.01 at 15h 53m 28s.xml">
-      <configuration name="new post should be added" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_After_creation__input__shouldn't_be_displayed - 2019.10.07 at 22h 12m 23s.xml">
+      <configuration name="ProfileStatus Component.After creation &lt;input&gt; shouldn't be displayed" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="message_of_new_post_should_be_correct - 2019.09.01 at 15h 56m 32s.xml">
-      <configuration name="message of new post should be correct" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_After_creation__span__with_correct_status_should_be_displayed - 2019.10.07 at 22h 13m 06s.xml">
+      <configuration name="ProfileStatus Component.After creation &lt;span&gt; with correct status should be displayed" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="message_of_new_post_should_be_correct - 2019.09.01 at 15h 57m 01s.xml">
-      <configuration name="message of new post should be correct" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_Input_should_be_displayed_in_edit_mode_instead_of_span - 2019.10.07 at 22h 16m 35s.xml">
+      <configuration name="ProfileStatus Component.Input should be displayed in edit mode instead of span" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="length_should_be_decremented_after_deleting - 2019.09.01 at 16h 04m 43s.xml">
-      <configuration name="length should be decremented after deleting" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_Input_should_be_displayed_in_edit_mode_instead_of_span - 2019.10.07 at 22h 17m 00s.xml">
+      <configuration name="ProfileStatus Component.Input should be displayed in edit mode instead of span" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="length_should_be_decremented_after_deleting - 2019.09.01 at 16h 05m 05s.xml">
-      <configuration name="length should be decremented after deleting" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="ProfileStatus_Component_updateStatus_Callback_should_be_called - 2019.10.07 at 22h 23m 04s.xml">
+      <configuration name="ProfileStatus Component.updateStatus Callback should be called" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="ProfileStatus_Component_updateStatus_Callback_should_be_called - 2019.10.07 at 22h 23m 53s.xml">
+      <configuration name="ProfileStatus Component.updateStatus Callback should be called" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162963000" />
+    <option name="totallyTimeSpent" value="168337000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,15 +469,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="281" y="107" width="1025" height="656" extended-state="0" />
+    <frame x="418" y="310" width="1025" height="675" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22289766" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15197569" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3276699" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34169886" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26629424" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -461,28 +503,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Login/Login.jsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -623,20 +650,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -651,19 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,9 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,16 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/redux-store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Users/Users.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -733,9 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,34 +741,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/api/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="1105">
           <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Users/User.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="68">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -789,7 +760,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Users/UsersContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="204">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -799,8 +770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="102">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -809,7 +780,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/users-reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="357">
           <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -826,8 +797,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Users/Users.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="51">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/redux-store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

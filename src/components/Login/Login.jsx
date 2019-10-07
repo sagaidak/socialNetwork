@@ -7,8 +7,8 @@ import {required} from "../../utils/validators/validators";
 import {Redirect} from "react-router-dom";
 import s from './Login.module.css';
 
-const LoginForm = (props) => {
-    return <form onSubmit={props.handleSubmit}>
+const LoginForm = ({handleSubmit, error}) => {
+    return <form onSubmit={handleSubmit}>
         <div>
             <Field placeholder={"Email"} name={'email'} component={Input}
                     validate={[required]}
@@ -24,9 +24,9 @@ const LoginForm = (props) => {
 
             /> remember me
         </div>
-        {props.error &&
+        {error &&
             <div className={s.form_summary_error}>
-                {props.error}
+                {error}
             </div>
         }
         <div>

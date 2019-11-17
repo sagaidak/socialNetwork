@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3e670f4-e2bf-4f53-905a-f431687c9274" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,8 +41,20 @@
       <file leaf-file-name="Users.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Users/Users.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="102">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Paginator.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -85,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileStatus.test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProfileStatus.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+            <state relative-caret-position="17">
+              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -100,7 +107,7 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="731">
               <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -112,7 +119,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="17">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -189,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/components/Users/User.jsx" />
         <option value="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" />
         <option value="$PROJECT_DIR$/src/redux/users-reducer.js" />
-        <option value="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" />
         <option value="$PROJECT_DIR$/src/utils/object-helpers.js" />
         <option value="$PROJECT_DIR$/src/components/Users/Users.jsx" />
         <option value="$PROJECT_DIR$/src/redux/redux-store.js" />
@@ -197,6 +203,7 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/App.test.js" />
         <option value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js" />
+        <option value="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" />
       </list>
     </option>
   </component>
@@ -216,9 +223,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="418" />
-    <option name="y" value="310" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="229" />
+    <option name="y" value="132" />
     <option name="width" value="1025" />
     <option name="height" value="675" />
   </component>
@@ -254,15 +261,22 @@
               <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="network" type="b2602c69:ProjectViewProjectNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile" type="462c0819:PsiDirectoryNode" />
-              <item name="ProfileInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="Paginator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,7 +286,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TimeOutApp/timeout" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -420,7 +434,9 @@
       <workItem from="1567164283962" duration="5822000" />
       <workItem from="1567334801459" duration="7544000" />
       <workItem from="1570455311238" duration="12361000" />
-      <workItem from="1570472165338" duration="4126000" />
+      <workItem from="1570472165338" duration="4799000" />
+      <workItem from="1572106575228" duration="34000" />
+      <workItem from="1574016728937" duration="2449000" />
     </task>
     <servers />
   </component>
@@ -457,7 +473,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168337000" />
+    <option name="totallyTimeSpent" value="171493000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,16 +485,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="418" y="310" width="1025" height="675" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15197569" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2313988" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3276699" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26629424" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32838285" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26629424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -494,6 +510,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -752,9 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,19 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,16 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Users/Users.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/redux-store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -817,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="17">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -827,7 +843,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="731">
           <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -858,8 +874,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        <state relative-caret-position="17">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Users/Users.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

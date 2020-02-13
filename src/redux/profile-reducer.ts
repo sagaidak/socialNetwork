@@ -1,4 +1,5 @@
 import {profileAPI} from "../api/api";
+import {PostType, ProfileType} from "../Types/Types";
 
 const ADD_POST = 'ADD-POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
@@ -9,26 +10,31 @@ let initialState = {
     postsData: [
         {id: 1, post: "Hi, how are you?", likes: 5},
         {id: 2, post: "Lost in the oblivion", likes: 10},
-    ],
-    profile: null,
+    ] as Array<PostType>,
+    profile: null as ProfileType | null,
     status: '',
 };
 
-const profileReducer = (state = initialState, action) => {
+
+export type InitialStateType = typeof initialState;
+
+const profileReducer = (state = initialState, action: any):InitialStateType => {
     switch (action.type) {
         case ADD_POST:
             let newPost = {
                 id: 5,
                 post: action.post,
-                likes: 0
+                likes: 0,
             };
             return {
                 ...state,
                 postsData: [...state.postsData, newPost],
+
             };
         case SET_USER_PROFILE:
             return {
                 ...state, profile: action.profile
+
             };
         case SET_USER_STATUS:
             return {
@@ -44,20 +50,43 @@ const profileReducer = (state = initialState, action) => {
     }
 };
 
-export const addPostActionCreator = (post) => ({type: ADD_POST, post});
-export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
-export const getUserProfile = (userId=2) => async (dispatch) => {
+type AddPostActionCreatorActionType = {
+    type: typeof ADD_POST,
+    post: string
+}
+
+export const addPostActionCreator = (post: string):AddPostActionCreatorActionType => ({type: ADD_POST, post});
+
+type SetUserProfileActionType = {
+    type: typeof SET_USER_PROFILE,
+    profile: ProfileType
+}
+
+export const setUserProfile = (profile: ProfileType):SetUserProfileActionType => ({type: SET_USER_PROFILE, profile});
+export const getUserProfile = (userId=2) => async (dispatch: any) => {
     let response = await profileAPI.getUserProfile(userId);
     dispatch(setUserProfile(response));
 };
-export const setUserStatus = (status) => ({type: SET_USER_STATUS, status});
-export const deletePost = (postId) => ({type: DELETE_POST, postId});
 
-export const getUserStatus = (userId) => async (dispatch) => {
+type SetUserStatusActionType = {
+    type: typeof SET_USER_STATUS,
+    status: string
+}
+
+export const setUserStatus = (status: string):SetUserStatusActionType => ({type: SET_USER_STATUS, status});
+
+type DeletePostActionType = {
+    type: typeof DELETE_POST,
+    postId: number
+}
+
+export const deletePost = (postId: number):DeletePostActionType => ({type: DELETE_POST, postId});
+
+export const getUserStatus = (userId: number) => async (dispatch: any) => {
     let res = await profileAPI.getUserStatus(userId);
     dispatch(setUserStatus(res));
 };
-export const updateUserStatus = (status) => async (dispatch) => {
+export const updateUserStatus = (status: string) => async (dispatch: any) => {
     let res = await profileAPI.updateUserStatus(status);
 
     if (res.resultCode === 0) {
